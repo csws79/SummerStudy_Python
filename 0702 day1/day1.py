@@ -1,0 +1,13 @@
+A = raw_input("subject1: ")
+a = input("score: ")
+B = raw_input("subject2: ")
+b = input("score: ")
+C = raw_input("subject3: ")
+c = input("score: ")
+sum = a + b + c
+aver = round(float(sum) / 3, 3)
+print A + " " + str(a)
+print B + " " + str(b)
+print C + " " + str(c)
+print "sum: " + str(sum)
+print "average: " + str(aver)

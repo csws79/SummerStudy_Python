@@ -1,0 +1,6 @@
+Python 0001
+CSharp 0002
+Math 0003
+English 0004
+Network 0005
+Database 0006
