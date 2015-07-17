@@ -23,7 +23,7 @@ class TwoDim(Shape):
 class ThreeDim(Shape):
     volume = 0
     def calcVolume(self):
-        pass
+        pass000
 
     def printVolume(self):
         print "Volume : {0}".format(self.volume)

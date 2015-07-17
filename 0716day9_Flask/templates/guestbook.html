@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="/submit" method="POST">
+    Writer to Insert:<br>
+    <input type="text" name="Writer"><br>
+    Contents to Insert:<br>
+    <input type="text" name="Contents">
+    <input type="submit" value="Insert">
+</form>
+<br><br>
+<form action="/delete" method="POST">
+    Writer to delete:<br>
+    <input type="text" name="dw"><br>
+    Contents to delete:<br>
+    <input type="text" name="dc">
+    <input type="submit" value="Delete">
+</form>
+<br><br>
+<form action="/update" method="POST">
+    Writer to update:<br>
+    <input type="text" name="uw"><br>
+    Contents to update:<br>
+    <input type="text" name="uc">
+    <input type="submit" value="Update">
+</form>
+<br><br>
+{% for data in datas %}
+    작성자 : {{ data[1] }} <br>
+    내용 : {{ data[2] }} <br><br>
+{% endfor %}
+</body>
+</html>
