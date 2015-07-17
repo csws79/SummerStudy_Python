@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="/delete" method="POST">
+    Delete Writers:<br>
+    <input type="text" name="Writer"><br>
+    Delete Contents:<br>
+    <input type="text" name="Contents"><br>
+    <input type="submit" name="Delete">
+
+</form>
+<br><br>
+{% for data in datas %}
+    작성자 : {{ data[1] }} <br>
+    내용 : {{ data[2] }} <br><br>
+{% endfor %}
+</body>
+</html>
